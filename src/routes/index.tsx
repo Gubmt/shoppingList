@@ -9,12 +9,16 @@ const Auth = createStackNavigator();
 const AuthRoutes: React.FC = () => (
   <Auth.Navigator
     screenOptions={{
-      headerShown: false,
+      headerTitleAlign: 'center',
+      headerTintColor: '#ffffff',
+      headerStyle: {
+        backgroundColor: '#312e38',
+      },
       cardStyle: { backgroundColor: '#312e38' },
     }}
   >
-    <Auth.Screen name="ListScreen" component={ListScreen} />
-    <Auth.Screen name="ProductScreen" component={ProductScreen} />
+    <Auth.Screen name="Listas" component={ListScreen} />
+    <Auth.Screen name="Produtos" component={ProductScreen} />
   </Auth.Navigator>
 );
 
